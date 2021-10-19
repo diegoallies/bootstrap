@@ -5,19 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encrypto | Store</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
     <style>
-        section {
-            padding: 60px 0;
-        }
+      section {
+        padding: 60px 0;
+      }
+
+
+      .card {
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+      }
+
+
+      #imgq {
+        width: 80%;
+        height: 78%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 3%;
+      }
+
+      .row {
+        --bs-gutter-x: 0rem;
+      }
     </style>
 </head>
 <body class="bg-dark">
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light static" id="navq">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+
+
         <div class="container-fluid">
-          <a class="navbar-brand display-1" href="#">Encrypto27 Technologies CO</a>
+          <a class="navbar-brand display-1" href="#"><i class="bi bi-joystick"> </i> Encrypto27 Technologies CO</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -37,8 +60,8 @@
                   More
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="https://github.com/diegoallies/portfolio-from-scratch">My github</a></li>
-                  <li><a class="dropdown-item" href="#">More Information</a></li>
+                  <li><a class="dropdown-item" href="https://github.com/diegoallies/portfolio-from-scratch"><i class="bi bi-terminal">  </i>  My github</a></li>
+                  <li><a class="dropdown-item" href="https://t.me/encrypto27"><i class="bi bi-telegram"></i>  More Information</a></li>
                 </ul>
               </li>
             </ul>
@@ -47,7 +70,7 @@
       </nav>
 
     <!-- main image & intro text -->
-    <section id="intro bg-dark">
+    <section id="intro" class="bg-dark">
         <div class="contain">
             <img src="/assets/hggg.jpg" alt="Theme" id="imgq">
         </div>
@@ -55,11 +78,11 @@
 
     <!-- main image & intro text -->
     <section id="about">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center my-5 gap-5">
 
             <div class="card col-md-2" style="width: 18rem;">
-                <img class="card-img-top" src="assets/download.jpeg" alt="Card image cap">
-                <div class="card-body">
+                <img class="card-img-top" src="assets/download.jpeg" alt="Card image cap" width="228px" height="160px">
+                <div class="card-body" width="286" height="182">
                   <h5 class="card-title">Red Magic 5</h5>
                   <p class="card-text">5g | 12gb ram | 128 gb storage</p>
                   <p class="card-text">R6-000.00 </p>
@@ -68,8 +91,8 @@
             </div>
 
             <div class="card col-md-2" style="width: 18rem;">
-                <img class="card-img-top" src="assets/al.jpeg" alt="Card image cap">
-                <div class="card-body">
+                <img class="card-img-top" src="assets/al.jpeg" alt="Card image cap" width="228px" height="160px">
+                <div class="card-body" width="286" height="182">
                   <h5 class="card-title">Alienware Laptop</h5>
                   <p class="card-text">Gaming laptop | 16gb ram </p>
                   <p class="card-text">R30-000.00 </p>
@@ -77,11 +100,13 @@
                 </div>
             </div>
             </div>
-            <div class="row justify-content-center">
+
+
+            <div class="row justify-content-center my-5 gap-5">
 
             <div class="card col-md-2" style="width: 18rem;">
-                <img class="card-img-top" src="assets/scr.jpeg" alt="Card image cap">
-                <div class="card-body">
+                <img class="card-img-top" src="assets/scr.jpeg" alt="Card image cap" width="228px" height="160px">
+                <div class="card-body" width="286" height="182">
                   <h5 class="card-title">Dual Monitor</h5>
                   <p class="card-text">Dual monitor screens | </p>
                   <p class="card-text">R4-000.00 </p>
@@ -90,12 +115,12 @@
             </div>
 
             <div class="card col-md-2" style="width: 18rem;">
-                <img class="card-img-top" src="assets/game.jpeg" alt="Card image cap">
-                <div class="card-body">
+                <img class="card-img-top" src="assets/game.jpeg" alt="Card image cap" width="228px" height="160px">
+                <div class="card-body" width="286" height="182">
                   <h5 class="card-title">Gaming Set</h5>
                   <p class="card-text">Gaming pc | Monitor | Laptop</p>
                   <p class="card-text">R20-000.00 </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a href="#" class="btn btn-primary">Purchase</a>
                 </div>
             </div>
             </div>
@@ -127,8 +152,8 @@ Now, takealot.com is South Africa’s largest, most innovative ecommerce retaile
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
-<footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
-    <div class="container text-center text-white">
+<footer id="sticky-footer" class="flex-shrink-0 py-4 -50 bg-light">
+    <div class="container text-center text-dark">
       <small>Copyright &copy; Encrypto27 Technologies CO</small>
     </div>
   </footer>
